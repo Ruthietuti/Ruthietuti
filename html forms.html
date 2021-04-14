@@ -1,0 +1,128 @@
+<!DOCTYPE html>	
+<html>
+<header style="color: lime"> Forms</header>
+<head>
+	<script type="text/javascript"> </script>
+	<style type="text/css">
+		form { background-color: violet; border-color: red; font-size: 15px; font-weight: bold; }
+		p { color: red; }
+	</style>
+	<title>working with forms</title>
+	<meta charset="utf-8">
+</head>
+
+
+<body>
+	<form method="post" action="./server.php" enctype="multipart/form-data">
+		<input type="hidden" name="formId" value="fo3205">
+		<p><label for="Fname"> First Name:
+		<input type="text" name="Fname" placeholder="Your first name" required=""> 
+		</label></p>
+<p>
+	<p>
+		
+	
+	</p>
+		<label for="Lname"> Last Name: 
+			<input type="text" dir="lname" name="last name" placeholder="Your last name" required="">
+		</label> </p>
+		
+		<p>
+			<label for="pword"> Password
+			<input type="Password" name="pword" dir="Password" required="">
+		</label>
+	</p>
+		<p>
+			<label for="Phone number"> Phone number
+				<input type="tel" type="number option" name="Pnumber" dir="Phone number" value=" eg 23495395573" required="">
+			</label>
+	</p>
+	<p>
+		<label for="Age"> Age:
+			<input type="number" name="age" min="18" max="40"  required="">
+		</label>
+	</p>
+		<p> <label for="email"> Email address: 
+			<input type="email" dir="email" name=" email" placeholder="Enter your email address" required=""></label>
+		
+	</p>
+	<p>
+ 		<label for="Web"> Favorite Website
+ 			<input type="web" name="Website" dir="web">
+ 		</label>
+		</p>
+		<p>
+			<label for="date"> Date
+				<input type="date" dir="date" name="date" required="">
+			</label>
+		</p>
+		<p> <label for="time"> Time:
+			<input type="time" name="Time" required=""></label>
+			
+		</p>	
+			<p>
+			<label for="Paper color"> Preferred paper color:
+				<input type="color" name="Paper" dir="paper color" required=""></label>
+		</p>
+
+		<p>
+			<label for="Passport"> Upload passport
+				<input type="file" dir="passport" name="passport" required=""></label>
+		</p>
+		 <p>
+		 	<label for="plang"> Programming Language
+		 		<select id="plang" name="plang" size="3" multiple>
+		 			<option value="Java" label="Java"> Java</option>
+		 			<option value=" C++" label="C++"> C++</option>
+		 			<option value=" C" label="C"> C</option>
+		 			<option value="PHP" label="PHP"> PHP</option>
+		 			<option value="Javascript" label="Javascript"> Javascript</option>
+		 			<option value="Python" label="Python"> Python</option>
+		 		</select></label>
+		 </p>
+		 <p>
+		 	<fieldset> <legend> Proficiency Level</legend>
+		 		<label for="Bg"> Beginner
+		 			<input type="radio" id="bg" name="level"> </label>
+		 			<label for="inter"> Intermediate
+		 				<input type="radio" id="inter" name="level">
+		 			</label>
+		 			<label for="prof">Professional
+		 				<input type="radio" id="prof" name="level"> 
+		 			</label>
+		 		
+		 	</legend></fieldset>
+
+		 </p>
+		 <p><label for=" Recommendation">
+		  		Recommendation :
+		 	<textarea id="Recomendation" name="Recommendation" rows="10" cols="50"
+		 	wrap="hard" maxlength="400" placeholder=" Enter Recommendation"></textarea>
+		 </label>
+		 </p>
+		 <p>
+		 	<label for="rate">
+		 		Ratings :
+		 		<input type="number" id="rate" name="rate" list="Ratings" min="0" max="100" step="5">
+		 	</label>
+		 	
+		 </p>
+		 <p>
+		 	<label for=" Terms">
+		 		Accept terms of service
+		 		<input type="checkbox" id="terms" name="terms" required>
+		 	</label>
+		 </p>
+		 <p>
+		 	<input type="submit" value="Submit" name="Submit">
+
+ </form>
+
+
+
+
+</body>
+
+
+
+</html>
